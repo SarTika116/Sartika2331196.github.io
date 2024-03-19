@@ -87,3 +87,24 @@
     font-weight: bold;
 }
 
+/* Album Section */
+#album{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    align-items: center;
+    padding: 20px;
+
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.gallery img{
+    width: 380px;
+    height: 240px;
+    margin: 10px;
+}
