@@ -31,13 +31,27 @@ const tabs = document.querySelectorAll('[data-target]'),
              
          })
       })
-/*=============== MIXITUP FILTER PORTFOLIO ===============*/
+/*=============== MIXITUP FILTER ALBUMS ===============*/
+let mixerAlbums = mixitup('.albums_container', {
+    selectors: {
+        target: '.albums_card'
+    },
+    animation: {
+        duration: 300
+    }
+});
 
+/*===== Link Active Albums =====*/
+const linkAlbums = document.querySelectorAll('.albums_item')
 
-/*===== Link Active Work =====*/
+function activeAlbums() {
+    linkAlbums.forEach(l=> l.classList.remove('active-albums'))
+    this.classList.add('active-albums')
+}
 
+linkAlbums.forEach(l=> l.addEventListener("click", activeAlbums))
 
-/*===== Work Popup =====*/
+/*===== Albums Popup =====*/
 
 
 /*=============== SERVICES MODAL ===============*/

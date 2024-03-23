@@ -411,14 +411,14 @@
             <h2 data-heading="My Albums" class="section_title">Photos</h2>
 
             <div class="albums_filters">
-                <span class="albums_item active-albums">All</span>
-                <span class="albums_item">Flowers</span>
-                <span class="albums_item">Animals</span>
-                <span class="albums_item">Scenery</span>
+                <span class="albums_item active-albums" data-filter="all">All</span>
+                <span class="albums_item" data-filter=".flowers">Flowers</span>
+                <span class="albums_item" data-filter=".animals">Animals</span>
+                <span class="albums_item" data-filter=".scenery">Scenery</span>
             </div>
 
             <div class="albums_container container grid">
-                <div class="albums_card">
+                <div class="albums_card mix flowers">
                     <img src="assets/img/albums-1.jpg" alt="" class="albums_img">
                     <h3 class="albums_title">Flowers</h3>
                     <span class="albums_button">Info
@@ -436,7 +436,7 @@
                     </div>
                 </div>
 
-                <div class="albums_card">
+                <div class="albums_card mix flowers">
                     <img src="assets/img/albums-2.jpg" alt="" class="albums_img">
                     <h3 class="albums_title">Flowers</h3>
                     <span class="albums_button">Info
@@ -454,7 +454,7 @@
                     </div>
                 </div>
 
-                <div class="albums_card">
+                <div class="albums_card mix animals">
                     <img src="assets/img/albums-3.jpg" alt="" class="albums_img">
                     <h3 class="albums_title">Animals</h3>
                     <span class="albums_button">Info
@@ -472,7 +472,7 @@
                     </div>
                 </div>
 
-                <div class="albums_card">
+                <div class="albums_card mix animals">
                     <img src="assets/img/albums-4.jpg" alt="" class="albums_img">
                     <h3 class="albums_title">Animals</h3>
                     <span class="albums_button">Info
@@ -490,7 +490,7 @@
                     </div>
                 </div>
 
-                <div class="albums_card">
+                <div class="albums_card mix scenery">
                     <img src="assets/img/albums-5.jpg" alt="" class="albums_img">
                     <h3 class="albums_title">Scenery</h3>
                     <span class="albums_button">Info
@@ -508,7 +508,7 @@
                     </div>
                 </div>
 
-                <div class="albums_card">
+                <div class="albums_card mix scenery">
                     <img src="assets/img/albums-6.jpg" alt="" class="albums_img">
                     <h3 class="albums_title">Scenery</h3>
                     <span class="albums_button">Info
@@ -543,7 +543,7 @@
     
 
     <!--========== MIXITUP FILTER ==========-->
-    <script src=""></script>
+    <script src="assets/js/mixitup.min.js"></script>
 
     <!--========== SWIPER JS ==========-->
     <script src=""></script>
