@@ -52,8 +52,25 @@ function activeAlbums() {
 linkAlbums.forEach(l=> l.addEventListener("click", activeAlbums))
 
 /*===== Albums Popup =====*/
+document.addEventListener("click", (e) => {
+    if(e.target.classList.contains("albums_button")) {
+        toggleAlbumsPopup();
+        albumsItemDetails(e.target.parentElement);
+    }
+})
+
+function toggleAlbumsPopup() {
+    document.querySelector(".albums_popup").classList.toggle("open");
+}
+
+document.querySelector(".albums_popup-close").addEventListener("click", toggleAlbumsPopup)
 
 
+function albumsItemDetails(albumsItem) {
+    document.querySelector(".pp_thumbnail img").src = albumsItem.querySelector(".albums_img").src;
+    document.querySelector(".albums_popup-subtitle span").innerHTML = albumsItem.querySelector(".albums_title").innerHTML;
+    document.querySelector(".albums_popup-body").innerHTML = albumsItem.querySelector(".albums_item-details").innerHTML;
+}
 /*=============== SERVICES MODAL ===============*/
 
 
